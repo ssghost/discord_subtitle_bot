@@ -7,5 +7,7 @@ Usage:
 On any text channel that involved this bot. Type '::start' to start working, type '::end' to stop working.
 
 Requirements:
+
 discord.py
+
 speech_recognition.py
