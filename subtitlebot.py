@@ -55,4 +55,7 @@ async def on_message(message):
                 channel.send('Timer Error.') 
                 timer.start() 
 
-client.run(token)
+try:
+    client.run(token)
+except:
+    print('Login Error.')
