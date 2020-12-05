@@ -1,2 +1,2 @@
-discord.py==1.2.3
-SpeechRecognition==3.8.1
+discord.py>=1.5.
+SpeechRecognition>=3.8.1
