@@ -2,7 +2,7 @@ import discord
 import time
 import speech_recognition as sr
 
-with open('./discord_token.txt') as f:
+with open('discord_token.txt') as f:
     token = f.readlines()[1]
 
 client = discord.Client()
@@ -55,7 +55,9 @@ async def on_message(message):
                 channel.send('Timer Error.') 
                 timer.start() 
 
-try:
-    client.run(token)
-except:
-    print('Login Error.')
+if __name__ == '__main__':
+    try:
+        print(token)
+        client.run(token, bot=True)
+    except:
+        print('Login Error.')
