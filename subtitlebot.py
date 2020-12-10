@@ -36,7 +36,7 @@ async def on_message(message):
         await timer.start()
         await channel.send('Ready For Listening.')
 
-    if message.content.channel.startswith('::end'):
+    if message.content.startswith('::end'):
         await timer.reset()
         await channel.send('Listening Finished.')
 
